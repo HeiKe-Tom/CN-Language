@@ -34,7 +34,9 @@ def use():
         output：translation 翻译后的字符串
         """
         # API
-        url = 'http://fanyi.youdao.com/translate?smartresult=dict&smartresult=rule&smartresult=ugc&sessionFrom=null'
+        URL = 'https://openapi.youdao.com/api'
+        APP_KEY = '6877543ff79c9c5a'
+        APP_SECRET = '6xqlvsprFKDRXop3NnFWQsTK1BjuoGpJ'
         # 传输的参数， i为要翻译的内容
         key = {
             'type': "AUTO",
@@ -102,7 +104,7 @@ def use():
             code.delete(1.0, tk.END)
         def de():
             put.delete(1.0,tk.END)
-        yan=requests.get("https://v.api.aa1.cn/api/yiyan/index.php")
+        yan=requests.get("https://openapi.youdao.com/api")
         r=yan.text
         r=r.strip('''<div style="display:none"><iframe src="http://random-api-suiji.aa1.cn/map/map.php" width="100%" height="100%" frameborder="0"></iframe>
 </div><p>''')
@@ -422,7 +424,7 @@ def use():
         btngit.place(x=0,y=600)
         win.iconbitmap('./icon/ico.ico')
         win.title("Cn-可视化中文编程")
-        win.geometry("1000x700")
+        win.geometry("1500x1000")
         put = tk.Text(win, height=20, width=100)
         put.place(x=100, y=400)
         code=tk.Text(win,height=20,width=100)
@@ -477,7 +479,7 @@ def use():
                 os.system("del "+ljjj)
                 g.msgbox("删除完毕")
         def scr():
-            g.msgbox("加微信:18038128007")
+            g.msgbox("加微信:13284178447")
         def jx():
             code.insert(INSERT,'''从 web 导入库 *
 win=创建界面
