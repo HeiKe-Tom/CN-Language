@@ -34,9 +34,7 @@ def use():
         output：translation 翻译后的字符串
         """
         # API
-        URL = 'https://openapi.youdao.com/api'
-        APP_KEY = '6877543ff79c9c5a'
-        APP_SECRET = '6xqlvsprFKDRXop3NnFWQsTK1BjuoGpJ'
+        URL = 'http://fanyi.youdao.com/translate?smartresult=dict&smartresult=rule&smartresult=ugc&sessionFrom=null'
         # 传输的参数， i为要翻译的内容
         key = {
             'type': "AUTO",
