@@ -421,7 +421,7 @@ def use():
         btngit=tk.Button(image=imgBtn3,command=git)
         btngit.place(x=0,y=600)
         win.iconbitmap('./icon/ico.ico')
-        win.title("Cn-可视化中文编程")
+        win.title("Chinese Code Studio v1.0.1-可视化中文编程")
         win.geometry("1500x1000")
         put = tk.Text(win, height=20, width=100)
         put.place(x=100, y=400)
